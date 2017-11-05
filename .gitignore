@@ -2,3 +2,5 @@
 *.png
 *.pyc
 *.ipynb
+run.py
+argparser.py
