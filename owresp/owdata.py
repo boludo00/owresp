@@ -14,7 +14,7 @@ class OWData(GetScrapy):
 
     """
         An instance of an OWData object will have made a single GET
-        request in its instantiation and thereafter store useful
+        request in its instantiation and store useful
         and relevant data in a precise and clean structure. This
         will ease the burden of finding bugs in the overall RESTful
         service by writing more modular code as testing will be

@@ -55,6 +55,7 @@ class HerosStats(object):
         # return "%s :: HerosStats(stat_name = %s, data = %s)" % (self.__class__, self.stat_name, self.hero_and_value)            
 
     def __iter__(self):
+        # iterations to yield HeroStat individual objects
         for pair in self.hero_and_value:
             yield self.__dict__[pair[0]]
 
@@ -68,18 +69,27 @@ class HerosStats(object):
         return hs
         
     def set_values(self):
+        """
+        Sets this objects values attribute. 
+        """
         values = []
         for pair in self.hero_and_value:
             values.append(pair[1])
         self.values = values
         
     def set_heros(self):
+        """
+        Set the heros attribute of this object.
+        """
         heros = []
         for pair in self.hero_and_value:
             heros.append(pair[0])
         self.heros = heros
     
     def get_values(self):
+        """
+        :returns: list of ints
+        """
         return self.values
 
     def get_data(self):
